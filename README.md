@@ -29,6 +29,8 @@ The mount point in your VM is `/home/vagrant/project`
  * project_dir
  * ipaddress
 
+Default values are defined here: https://github.com/tsteur/php-dev-vm/blob/master/vagrantconfig.yaml
+
 ### Installed Packages
  * PHP including lots of modules
  * Apache2
