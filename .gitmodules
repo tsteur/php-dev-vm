@@ -1,0 +1,15 @@
+[submodule "puppet/manifests/modules/apache"]
+	path = puppet/manifests/modules/apache
+	url = git://github.com/puppetlabs/puppetlabs-apache
+[submodule "puppet/manifests/modules/Firewall"]
+	path = puppet/manifests/modules/Firewall
+	url = git://github.com/puppetlabs/puppetlabs-firewall
+[submodule "puppet/manifests/modules/mysql"]
+	path = puppet/manifests/modules/mysql
+	url = git://github.com/puppetlabs/puppetlabs-mysql
+[submodule "puppet/manifests/modules/php"]
+	path = puppet/manifests/modules/php
+	url = git://github.com/Mayflower/puppet-php
+[submodule "puppet/manifests/modules/stdlib"]
+	path = puppet/manifests/modules/stdlib
+	url = git://github.com/puppetlabs/puppetlabs-stdlib

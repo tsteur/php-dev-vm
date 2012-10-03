@@ -1,0 +1,11 @@
+# Don't change this config!
+
+# Use vagrantconfig_local.yaml to override these settings instead.
+
+db_password: secure
+db_username: php
+db_name: laravel
+db_root_password: secure
+project_url: myproject.local
+project_dir: project
+ipaddress: 192.168.33.41
