@@ -11,7 +11,7 @@ Setups a Virtual Machine for PHP development. The Vagrant base box is Ubuntu Pre
  `cp vagrantconfig_local.yaml-dist vagrantconfig_local.yaml`
  4. Execute the command `vagrant up`
  5. That's it. It'll take some time when executing this command the first time. It'll download the Vagrant base box once and install all required packages.
- 6. Don't forget to update your local hosts file. Default project url is "myproject.local".
+ 6. Don't forget to update your local hosts file. Default is `192.168.33.41 myproject.local`.
 
 ### Usage
 
