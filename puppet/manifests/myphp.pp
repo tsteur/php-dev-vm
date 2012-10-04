@@ -7,6 +7,11 @@ class myphp {
     require => Exec['make_update'],
   }
 
+  package { ['libgv-php5', 'graphviz']:
+    ensure  => latest,
+    require => Exec['make_update'],
+  }
+
   package { 'curl':
     ensure  => latest,
     require => Exec['make_update'],
@@ -25,6 +30,24 @@ class myphp {
     command => 'curl -s https://getcomposer.org/installer | php -- --install-dir="/bin"',
     require => [ Package['curl'], Class["php::install", "php::config"] ],
     unless  => 'which composer.phar',
+  }
+
+  class { 'pear': require => Class['php::install'] }
+  class { 'phpqatools': require => Class['pear'] }
+
+  pear::package { "PHPUnit_MockObject":
+    repository => "pear.phpunit.de",
+    require    => Pear::Package["PEAR"],
+  }
+
+  pear::package { "PHP_CodeCoverage":
+    repository => "pear.phpunit.de",
+    require    => Pear::Package["PEAR"],
+  }
+
+  pear::package { "PHPUnit_Selenium":
+    repository => "pear.phpunit.de",
+    require    => Pear::Package["PEAR"],
   }
 
 }

@@ -13,3 +13,9 @@
 [submodule "puppet/manifests/modules/stdlib"]
 	path = puppet/manifests/modules/stdlib
 	url = git://github.com/puppetlabs/puppetlabs-stdlib
+[submodule "puppet/manifests/modules/pear"]
+	path = puppet/manifests/modules/pear
+	url = git://github.com/treehouseagency/puppet-pear
+[submodule "puppet/manifests/modules/phpqatools"]
+	path = puppet/manifests/modules/phpqatools
+	url = git://github.com/rafaelfelix/puppet-phpqatools
