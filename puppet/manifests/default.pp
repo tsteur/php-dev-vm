@@ -28,6 +28,10 @@ host { $project_url:
 
 class { 'apache':  }
 class { 'apache::mod::php': }
+class { 'apache::mod::auth_basic': }
+
+apache::mod {'vhost_alias': }
+apache::mod {'rewrite': }
 
 apache::vhost { $project_url:
   priority    => '10',
