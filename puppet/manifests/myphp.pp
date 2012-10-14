@@ -17,7 +17,12 @@ class myphp {
     require => Exec['make_update'],
   }
 
-  php::module { ['snmp', 'curl', 'xdebug', 'mysql', 'gd', 'sqlite', 'memcache', 'mcrypt', 'imagick', 'geoip', 'uuid', 'recode', 'cgi']: 
+  php::module { ['snmp', 'curl', 'xdebug', 'mysql', 'gd', 'memcache', 'mcrypt', 'imagick', 'geoip', 'uuid', 'recode', 'cgi']: 
+    require => Class["php::install", "php::config"],
+  }
+
+  php::module { 'sqlite':
+    source  => 'puppet:///files/etc/php5/conf.d/',
     require => Class["php::install", "php::config"],
   }
 
