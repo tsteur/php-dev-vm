@@ -17,7 +17,7 @@ class myphp {
     require => Exec['make_update'],
   }
 
-  php::module { ['snmp', 'curl', 'xdebug', 'mysql', 'gd', 'memcache', 'mcrypt', 'imagick', 'geoip', 'uuid', 'recode', 'cgi']: 
+  php::module { ['snmp', 'curl', 'xdebug', 'mysql', 'gd', 'memcache', 'xsl', 'mcrypt', 'imagick', 'geoip', 'uuid', 'recode', 'cgi']: 
     require => Class["php::install", "php::config"],
   }
 
@@ -53,6 +53,11 @@ class myphp {
   pear::package { "PHPUnit_Selenium":
     repository => "pear.phpunit.de",
     require    => Pear::Package["PEAR"],
+  }
+
+  pear::package { "DocBlox":
+    version => 'latest',
+    repository => "pear.docblox-project.org"
   }
 
 }
