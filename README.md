@@ -34,7 +34,7 @@ Default values are defined here: https://github.com/tsteur/php-dev-vm/blob/maste
 ### Installed Packages
  * PHP including lots of modules ('pdo', 'pdo_mysql', 'mysqli', 'sqlite', 'snmp', 'curl', 'xdebug', 'mysql', 'gd', 'memcache', 'xsl', 'mcrypt', 'imagick', 'geoip', 'uuid', 'recode', 'cgi')
  * PHP QA Tools (PHPUnit, PHPMD - PHP Mess Detector, PHP Depend, PHP CodeCoverage, PHP_CodeSniffer, DocBlox, ...)
- * Apache2
+ * Apache2 (including mods like php, auth_basic, vhost_alias, rewrite)
  * MySQL
  * Redis
  * Memcache / Memcached
