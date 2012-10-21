@@ -32,7 +32,7 @@ The mount point in your VM is `/home/vagrant/project`
 Default values are defined here: https://github.com/tsteur/php-dev-vm/blob/master/vagrantconfig.yaml
 
 ### Installed Packages
- * PHP including lots of modules
+ * PHP including lots of modules ('pdo', 'pdo_mysql', 'mysqli', 'sqlite', 'snmp', 'curl', 'xdebug', 'mysql', 'gd', 'memcache', 'xsl', 'mcrypt', 'imagick', 'geoip', 'uuid', 'recode', 'cgi')
  * PHP QA Tools (PHPUnit, PHPMD - PHP Mess Detector, PHP Depend, PHP CodeCoverage, PHP_CodeSniffer, DocBlox, ...)
  * Apache2
  * MySQL
