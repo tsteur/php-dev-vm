@@ -37,7 +37,7 @@ Default values are defined here: https://github.com/tsteur/php-dev-vm/blob/maste
  * Apache2
  * MySQL
  * Redis
- * Memcache
+ * Memcache / Memcached
  * Percona-Toolkit
  * Apache Utils
  * Graphviz
