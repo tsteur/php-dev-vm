@@ -33,7 +33,7 @@ Default values are defined here: https://github.com/tsteur/php-dev-vm/blob/maste
 
 ### Installed Packages
  * PHP including lots of modules
- * PHP QA Tools (PHPUnit, PHPMD - PHP Mess Detector, PHP Depend, PHP CodeCoverage, PHP_CodeSniffer, ...)
+ * PHP QA Tools (PHPUnit, PHPMD - PHP Mess Detector, PHP Depend, PHP CodeCoverage, PHP_CodeSniffer, DocBlox, ...)
  * Apache2
  * MySQL
  * Redis
